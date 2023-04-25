@@ -1,0 +1,126 @@
+@mixin myMixin($background-image, $background-size, $background-position, $background-repeat) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url($background-image);
+  background-size: $background-size;
+  background-position: $background-position;
+  background-repeat: $background-repeat;
+  height: 100%;
+  font-family: 'Fira Sans', sans-serif;
+ 
+
+  h1 {
+    color: #fff;
+    font-weight: 900;
+  }
+
+  p{
+    color: #fff;
+  }
+
+  input{
+    margin-bottom: 20px;
+  }
+
+}
+
+.app {
+
+  &__game-page{ 
+    @include myMixin('/assets/img/brain2.png', cover, center, no-repeat);
+  }
+
+  &__login-page{
+    @include myMixin('/assets/img/brain.png', cover, center, no-repeat);
+  }
+
+  &__result-page{
+    @include myMixin('/assets/img/animals.png', 60%, center, no-repeat);
+    background-color: #ecc787;
+  }
+
+  &__presentation {
+    background-color: black;
+    height: 40%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    border-radius: 2%;
+  }
+
+  &__intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__game {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+ 
+  &__game-board {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  &__finished{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background: #ffffff;
+    opacity: 0.9;
+    width: 20%;
+    height: 110px;
+    color: black;
+    font-family: "Fira Sans", sans-serif;
+    text-align: center;
+    margin-bottom: 2%;
+    border-radius: 2%;
+
+    &__score{
+      display: flex;
+      justify-content: space-around;
+      width: 100%;}
+    
+    &__hits{
+      color: green;
+    }
+    &__errors{
+      color: red;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &__game{
+      width: 100%;
+    }
+
+    &__finished{
+      width: 60%;
+    }
+
+    &__result-page{
+       background-size: 80%;
+    }
+
+    &__presentation {
+      width: 70%;
+    }
+
+  }
+ 
+}

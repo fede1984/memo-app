@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import './App.module.scss';
+@import './components/Card/Card.module.scss';
+@import './components/GameBoard/GameBoard.module.scss';
+@import './components/Scoreboard/Scoreboard.module.scss';
+
+html, body,#root {
+  height: 100%;
+}
+form{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
