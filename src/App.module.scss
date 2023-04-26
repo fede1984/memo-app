@@ -29,15 +29,15 @@
 .app {
 
   &__game-page{ 
-    @include myMixin('/assets/img/brain2.png', cover, center, no-repeat);
+    @include myMixin('/assets/img/brain2.webp', cover, center, no-repeat);
   }
 
   &__login-page{
-    @include myMixin('/assets/img/brain.png', cover, center, no-repeat);
+    @include myMixin('/assets/img/brain.webp', cover, center, no-repeat);
   }
 
   &__result-page{
-    @include myMixin('/assets/img/animals.png', 60%, center, no-repeat);
+    @include myMixin('/assets/img/animals.webp', 60%, center, no-repeat);
     background-color: #ecc787;
   }
 
