@@ -5,7 +5,7 @@ A react application that simulates the famous game memo-test
 
 1 - Clone or download the repository
 
-2- Go in the terminal to the folder where I cloned or downloaded the app, enter the app folder and from there run npm install
+2- Go in the terminal to the folder where cloned or downloaded the app, enter the app folder and from there run npm install
 
 3. Finally run npm start
 
